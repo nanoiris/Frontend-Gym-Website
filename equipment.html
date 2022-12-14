@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- TODO : 
+        Change tab color to primary
+        Fix Trainer ad + duplicate to classes ad
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Debug link  -->
+    <!-- <link rel="stylesheet" href="css/debug.css"> -->
+    <title>Jaze Gym - Equipment</title>
+    <meta name="description"
+        content="With so much equipment to choose from our gym is the ultimate workout spot for women!" />
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <meta name="keywords" content=" gym, fitness, childcare, pool, sauna, steam sauna, women, equipment, workout, working
+    out, yoga, zumba, playroom, health, trainer, personal trainer, leg press, leg extension, leg curls, calf raise, hip
+    abductor, glute machine, chest press, butterfly, shoulder press, lateral raise, stair master, elliptical, treadmill,
+    zen yoga, crossfit, aerial yoga, body strong, sculp pro, dance, move it, show time, underground parking, 24/7 gym,
+    open late" />
+    <script src="scripts/tabs.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation Start-->
+
+    <header id="header" class="gym equipment">
+        <!-- This script adds the site header to the page -->
+        <script src="scripts/addHeader.js" defer></script>
+    </header>
+
+    <!-- Equipment Intro -->
+    <section id="amenities-header" class="container my-5 p-5">
+        <div class="container is-max-desktop has-text-centered">
+            <h2 class="title mb-2 is-centered">Full body workout!</h2>
+            <p class="is-size-6 px-6-tablet mx-6-tablet">
+                From yoga mats and free weights to muscle building and cardio machines, we have all the highest quality
+                equipment available for you.
+            </p>
+        </div>
+    </section>
+
+    <!-- Machine Tabs Start -->
+    <section class="container my-5 px-4">
+        <div class="tabs is-centered is-toggle">
+            <ul>
+                <li class="is-active has-text-weight-semibold" data-target="lower-body">
+                    <a>
+                        <span class="icon is-small"><i class="fas fa-shoe-prints"></i></span>
+                        <h3>Lower Body</h3>
+                    </a>
+                </li>
+                <li data-target="upper-body">
+                    <a>
+                        <span class="icon is-small"><i class="fas fa-dumbbell"></i></span>
+                        <h3>Upper Body</h3>
+                    </a>
+                </li>
+                <li data-target="cardio">
+                    <a>
+                        <span class="icon is-small"><i class="fa-solid fa-heart-pulse"></i></span>
+                        <h3>Cardio</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container has-text-centered" id="tab-content">
+            <div id="lower-body">
+                <div class="columns mt-5 is-multiline is-mobile">
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/leg-press.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Leg Press</h1>
+                                <p>Main Muscle:<br>Quadriceps</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/leg-extension.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Leg Extension</h1>
+                                <p>Muscle Targeted:<br>Quadriceps</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/leg-curl.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Leg Curls</h1>
+                                <p>Muscle Targeted:<br>Hamstring</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/leg-curl-prone.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Leg Curl (Prone)</h1>
+                                <p>Muscle Targeted:<br>Hamstring</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/calf-raise.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Calf Raise</h1>
+                                <p>Muscle Targeted:<br>Calves</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/hip-abductor.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Hip Abductor</h1>
+                                <p>Muscle Targeted:<br>Glutes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/glute-machine.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Glute Machine</h1>
+                                <p>Muscle Targeted:<br>Glutes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="upper-body" class="is-hidden">
+                <div class="columns mt-5 is-multiline is-mobile">
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/upper-chest-press.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Chest Press</h1>
+                                <p>Main Muscle:<br>Chest</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/upper-chest-butterfly.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Butterfly</h1>
+                                <p>Main Muscle:<br>Chest</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/upper-shoulder-press.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Shoulder Press</h1>
+                                <p>Main Muscle:<br>Shoulders</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/upper-lats.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Lateral Raise</h1>
+                                <p>Main Muscle:<br>Shoulders</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/upper-chest-butterfly.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Butterfly</h1>
+                                <p>Main Muscle:<br>Chest</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/upper-shoulder-press.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Shoulder Press</h1>
+                                <p>Main Muscle:<br>Shoulders</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/upper-lats.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Lateral Raise</h1>
+                                <p>Main Muscle:<br>Shoulders</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="cardio" class="is-hidden">
+                <div class="columns mt-5 is-multiline is-mobile">
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/cardio-stair-master.webp" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Stair Master</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-mobile is-4-tablet is-3-desktop is-flex">
+                        <div class="card has-background-primary">
+                            <div class="card-image has-text-centered">
+                                <img src="images/equipment/cardio-eliptical.png" alt="">
+                            </div>
+                            <div class="card-content has-text-white">
+                                <h1 class="title is-size-5 has-text-white">Eliptical</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Machines End -->
+    <!-- Advertisement for Trainers & Classes Start -->
+    <section class="container my-5 px-4">
+        <h2 class="is-hidden">&nbsp;</h2>
+        <div class="columns">
+            <div class="column is-one-third">
+                <figure class="image is-5">
+                    <img src="images/trainer.svg" alt="Women smiling well doing a zoomba class" class="">
+                </figure>
+            </div>
+            <div class="column is-two-thirds is-flex is-flex-direction-column">
+                <article class="round message is-primary is-flex is-flex-direction-column  is-flex-grow-1 ">
+                    <div class="message-header has-text-centered is-flex-grow-0">
+                        <h3 class="container is-size-4">Not sure of your next step?</h3>
+                    </div>
+                    <div
+                        class=" box message-body  p-5 has-text-dark is-flex-grow-1 is-flex is-flex-direction-column is-justify-content-center">
+                        <p class="has-text-centered is-vcentered">Our fully certified trainers can guide you through
+                            your journey. </p>
+
+                        <div class="buttons is-centered  mt-5">
+                            <a class="button is-rounded is-primary" href="trainers.html">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Advertisement for Trainers & Classes End -->
+
+    <!-- SIgn Up Buttom-->
+    <section id="equipment-sign-up" class="container my-5 p-5 hide-print">
+        <div class="container is-max-desktop has-text-centered">
+            <h2 class="title mb-2 is-centered">Ready to Gym?</h2>
+            <p class="mb-6 is-size-6 px-6-tablet mx-6-tablet">
+                Get access to all of our equipement with any of our plans.
+            </p>
+            <div class="buttons is-centered mt-4 ">
+                <a class="button is-rounded is-primary" href="plans.html">
+                    Sign up
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer class="footer" id="footer">
+        <!-- This script adds the site footer to the page -->
+        <script src="scripts/addFooter.js" defer></script>
+    </footer>
+</body>
+
+</html>

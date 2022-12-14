@@ -1,0 +1,139 @@
+@import url('../dist/css/mycssfile.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+  background-color: #edfdff;
+}
+p,
+ul,
+ol {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+header {
+  background-color: #ffffff !important;
+}
+
+
+footer {
+  background-color: #0f4154 !important;
+  color: #ffffff;
+}
+
+.navbar-item img {
+  max-height: 3.5rem;
+}
+
+.reverse-row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.img-cover {
+  object-fit: cover;
+}
+
+/* Mobile Styles*/
+@media (max-width: 768px) {
+  .reverse-cols-m {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* Mobile and Tablet Styles*/
+@media (max-width: 1023px) {
+  .navbar-link:not(.is-arrowless)::after {
+    display: none;
+  }
+
+  .navbar-link {
+    background-color: white !important;
+  }
+}
+
+/* Tablet and up*/
+@media (min-width: 769px) {
+  .px-6-tablet {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+
+  .mx-6-tablet {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
+}
+
+
+/* Flipping cards*/
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Equipment animation */
+.card {
+  transition: 1s;
+}
+
+.card:hover {
+  box-shadow: -4px 6px 7px rgba(0, 0, 0, 0.5);
+}
+
+.error {
+  border: 2px solid red !important;
+}
+
+@media print {
+  * {
+    background-color: white;
+  }
+
+  .column {
+    padding: 2px !important;
+    page-break-inside: avoid !important;
+  }
+
+  html, body {
+    height:100% !important; 
+    font-size: 9.5pt !important;
+  }
+
+  .button, footer, .control, .image, .hide-print{
+    display: none;
+  }
+
+  .flip-card-back {
+    transform: none;
+  }
+}
